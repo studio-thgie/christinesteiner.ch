@@ -7,10 +7,30 @@ html, body {
     font-family: 'presidencia_finaregular';
     color: rgba(4, 60, 74);
 }
-body.bg1 {
-    background-image: url(background_001.jpg);
+body.bg {
     background-repeat: no-repeat;
-    background-position: right 120px;
+    background-attachment: fixed;
+    background-position: right bottom;
+    background-size: 1000px;
+}
+body.bg1 {
+    background-image: url(backgrounds/1.png);
+    background-size: 90%;
+}
+body.bg2 {
+    background-image: url(backgrounds/2.png);
+}
+body.bg3 {
+    background-image: url(backgrounds/3.png);
+}
+body.bg4 {
+    background-image: url(backgrounds/4.png);
+}
+body.bg5 {
+    background-image: url(backgrounds/5.png);
+}
+body.bg6 {
+    background-image: url(backgrounds/6.png);
 }
 
 .header, .footer {
@@ -89,7 +109,7 @@ body.bg1 {
 .content h1, h2, h3 {
     font-weight: 400;
     font-size: 20px;
-    margin: 0;
+    margin: 0 0 20px;
 }
 .content ul {
     list-style-type: none;
@@ -100,7 +120,13 @@ body.bg1 {
     margin-right: 3px;
 }
 .content p {
-    max-width: 75%;
+    max-width: 66%;
+    margin-top: 0;
+    padding-right: 20px;
+}
+.content img.impression {
+    float: right;
+    max-width: 33%;
 }
 .footer {
     margin-bottom: 30px;
@@ -124,4 +150,44 @@ i {
 a {
     text-decoration: none;
     color: rgba(4, 60, 74);
+}
+
+/* helpder */
+.clear {
+    float: none;
+    clear: both;
+}
+
+/* responsive */
+
+@media (max-width: 768px){
+    .header {
+        padding-top: 20px;
+        padding-bottom: 20px;
+    }
+    .nav > ul > li {
+        width: auto;
+    }
+    .nav > ul > li > a {
+        min-width: 0;
+        padding: 0 10px 2px;
+        margin-right: 10px;
+    }
+}
+@media (max-width: 480px){
+    .nav {
+        margin-bottom: 20px;
+    }
+    .content {
+        margin-bottom: 20px;
+    }
+    .content p {
+        max-width: 100%;
+        padding-right: 0;
+    }
+    .content img.impression {
+        float: none;
+        max-width: 100%;
+        margin-bottom: 20px;
+    }
 }
