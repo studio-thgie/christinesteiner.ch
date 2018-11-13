@@ -25,7 +25,9 @@
 <body <?php body_class(); ?>>
 
 <div class="header">
-        <img src="<?php echo get_template_directory_uri(); ?>/assets/logo.svg" alt="Christine Steiner Logo">
+	<a href="<?php echo get_home_url(); ?>"/>
+        	<img src="<?php echo get_template_directory_uri(); ?>/assets/logo.svg" alt="Christine Steiner Logo">
+	</a>
     </div>
     <div class="wrapper">
 
