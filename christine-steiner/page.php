@@ -16,6 +16,9 @@ get_header();
 ?>
 
 <div class="content">
+	<?php if(has_post_thumbnail()): ?>
+        	<img src="<?php the_post_thumbnail_url('large'); ?> " alt="Impression" class="impression">
+	<?php endif; ?>
             <?php
 		while ( have_posts() ) :
 			the_post();
