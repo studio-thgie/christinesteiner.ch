@@ -530,10 +530,10 @@ a {
         padding-top: 20px;
         padding-bottom: 20px;
     }
-    .nav > ul > li {
+    ul#primary-menu > li {
         width: auto;
     }
-    .nav > ul > li > a {
+    ul#primary-menu > li > a {
         min-width: 0;
         padding: 0 10px 2px;
         margin-right: 10px;
