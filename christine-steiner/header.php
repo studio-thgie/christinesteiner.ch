@@ -24,6 +24,14 @@
 
 <body <?php body_class(); ?>>
 
+	<?php if( get_field('hintergrund') ): ?>
+		<div class="background" style="background-image: url(<?php echo get_template_directory_uri(); ?>/assets/images/Element_<?php the_field('hintergrund'); ?>.svg);"></div>
+	<?php else: ?>
+		<div class="background" style="background-image: url(<?php echo get_template_directory_uri(); ?>/assets/images/Element_01.svg;"></div>
+	<?php endif; ?>
+
+
+
 <div class="header">
 	<a href="<?php echo get_home_url(); ?>"/>
         	<img src="<?php echo get_template_directory_uri(); ?>/assets/logo.svg" alt="Christine Steiner Logo">
@@ -32,6 +40,12 @@
     <div class="wrapper">
 
         <div class="nav">
+			<div class="burger">
+				<div></div>
+				<div></div>
+				<div></div>
+				<div></div>
+			</div>
 		<?php
 			wp_nav_menu( array(
 				'theme_location' => 'menu-1',
@@ -40,4 +54,3 @@
 			?>
 
         </div>
-
