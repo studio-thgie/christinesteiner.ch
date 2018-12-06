@@ -363,7 +363,7 @@ template {
 html, body {
     height: 100%;
     font-family: 'presidencia_finaregular';
-    color: rgba(4, 60, 74);
+    color: rgba(4, 60, 74, 1);
 }
 body.bg {
     background-repeat: no-repeat;
@@ -381,7 +381,7 @@ body.bg {
     background-size: contain;
     background-repeat: no-repeat;
     background-position: center;
-    opacity: 0.5;
+    opacity: 0.3;
 }
 
 .header, .footer {
@@ -508,7 +508,7 @@ i {
 }
 a {
     text-decoration: none;
-    color: rgba(4, 60, 74);
+    color: rgba(4, 60, 74, 1);
 }
 
 /* helpder */
