@@ -21,7 +21,7 @@ Tags: custom-background, custom-logo, custom-menu, featured-images, threaded-com
  * 2. Prevent adjustments of font size after orientation changes in iOS.
  */
 
-html {
+ html {
   line-height: 1.15; /* 1 */
   -webkit-text-size-adjust: 100%; /* 2 */
 }
@@ -415,7 +415,7 @@ ul#primary-menu > li {
 ul#primary-menu > li > a {
     display: inline-block;
     min-width: 180px;
-    border-bottom: 1px solid rgba(4, 60, 74);
+    border-bottom: 1px solid rgba(4, 60, 74, 1);
     font-size: 18px;
     padding-bottom: 2px;
     text-align: center;
@@ -508,9 +508,14 @@ i {
 }
 a {
     text-decoration: none;
-    color: rgba(4, 60, 74, 1);
+    color: rgba(4, 60, 74);
 }
-
+.content a {
+	font-weight: 700;
+}
+.content a:hover {
+	text-decoration: underline;
+}
 /* helpder */
 .clear {
     float: none;
