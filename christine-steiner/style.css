@@ -380,7 +380,7 @@ body.bg {
     z-index: -100;
     background-size: contain;
     background-repeat: no-repeat;
-    background-position: center;
+    background-position: center 200px;
     opacity: 0.3;
 }
 
